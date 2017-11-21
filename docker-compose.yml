@@ -1,0 +1,23 @@
+version: '3'
+services:
+  app:
+    container_name: pet-reminder-api
+    build: .
+    depends_on:
+      - db
+    volumes:
+      - .:/opt/app
+    environment:
+      - PORT=7777
+      - COUCHDB_URL=http://admin:sikrit@pet-reminder-api-db:5984
+    ports:
+      - 7777:7777
+    tty: true
+  db:
+    container_name: pet-reminder-api-db
+    image: couchdb:1.7.1
+    ports:
+      - 5984:5984
+    environment:
+      - COUCHDB_USER=admin
+      - COUCHDB_PASSWORD=sikrit

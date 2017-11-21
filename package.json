@@ -1,0 +1,30 @@
+{
+  "name": "pet-reminder-api",
+  "private": true,
+  "version": "1.0.0",
+  "description": "API for your pet reminder™!",
+  "main": "src/index.js",
+  "dependencies": {
+    "@std/esm": "^0.12.5",
+    "bluebird": "^3.5.1",
+    "date-format": "^1.1.0",
+    "express": "^4.15.3",
+    "nano": "^6.4.2",
+    "winston": "^2.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.0.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.3.0",
+    "nodemon": "^1.11.0"
+  },
+  "scripts": {
+    "start": "node -r @std/esm .",
+    "dev": "nodemon -r @std/esm .",
+    "test": "eslint ."
+  },
+  "@std/esm": {
+    "esm": "js",
+    "cjs": true
+  }
+}

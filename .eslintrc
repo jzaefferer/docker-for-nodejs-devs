@@ -1,0 +1,11 @@
+{
+  "extends": "airbnb-base",
+  "env": {
+    "node": true
+  },
+  "rules": {
+    "semi": ["error", "never"],
+    "arrow-body-style": 0,
+    "import/prefer-default-export": 0
+  }
+}
