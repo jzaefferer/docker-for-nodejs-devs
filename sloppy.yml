@@ -11,6 +11,8 @@ services:
       env:
         - PORT: "7777"
         - COUCHDB_URL: http://db.backend.pet-reminder-api:5984
+      dependencies:
+        - "db"
     db:
       image: couchdb:1.7.1
       domain: "pet-reminder-api-db.sloppy.zone"
