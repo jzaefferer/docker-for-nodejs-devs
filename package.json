@@ -19,8 +19,8 @@
     "nodemon": "^1.11.0"
   },
   "scripts": {
-    "start": "node -r @std/esm .",
-    "dev": "nodemon -r @std/esm .",
+    "start": "nodemon -r @std/esm .",
+    "prod": "node -r @std/esm .",
     "test": "eslint ."
   },
   "@std/esm": {
