@@ -1,6 +1,8 @@
 .editorconfig
+.git
 docker-compose.yml
 Dockerfile
+Dockerfile-prod
 node_modules
 README.md
 sloppy.yml
