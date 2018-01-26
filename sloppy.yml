@@ -1,5 +1,5 @@
-version: "v1"
-project: "pet-reminder-api"
+version: v1
+project: pet-reminder-api
 services:
   backend:
     api:
